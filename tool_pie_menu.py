@@ -1,5 +1,16 @@
 import bpy
 
+bl_info = {
+    "name": "Tool Pie Menu",
+    "author": "BlenderBoi",
+    "version": (1, 0),
+    "blender": (2, 80, 0),
+    "location": "Spacebar",
+    "description": "Pie Menu for Tools",
+    "warning": "",
+    "doc_url": "",
+    "category": "Tools",
+}
 
 
 class SCULPT_MT_Brush_Pie(bpy.types.Menu):
