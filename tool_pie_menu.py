@@ -34,19 +34,18 @@ class SCULPT_MT_Brush_Pie(bpy.types.Menu):
         
 #        pie.operator("wm.tool_set_by_id", text="Mask", icon="MOD_MASK").name = "builtin_brush.Mask"
 
-        pie.operator("wm.tool_set_by_id", text="Draw Sharp", icon="BRUSH_SCULPT_DRAW").name = "builtin_brush.Draw Sharp"
+        pie.operator("wm.tool_set_by_id", text="Scrape", icon="BRUSH_SCRAPE").name = "builtin_brush.Scrape"
         
         pie.operator("wm.tool_set_by_id", text="Grab", icon="BRUSH_GRAB").name = "builtin_brush.Grab"
      
-        pie.operator("wm.tool_set_by_id", text="Scrape", icon="BRUSH_SCRAPE").name = "builtin_brush.Scrape"
+        pie.operator("wm.tool_set_by_id", text="Inflate", icon="BRUSH_INFLATE").name = "builtin_brush.Inflate"
         
-        pie.operator("wm.tool_set_by_id", text="Pinch", icon="BRUSH_PINCH").name = "builtin_brush.Pinch"
+        pie.operator("wm.tool_set_by_id", text="Draw Sharp", icon="BRUSH_SCULPT_DRAW").name = "builtin_brush.Draw Sharp"
         
         pie.operator("wm.tool_set_by_id", text="Blob", icon="BRUSH_BLOB").name = "builtin_brush.Blob"
         
-        pie.operator("wm.tool_set_by_id", text="Inflate", icon="BRUSH_INFLATE").name = "builtin_brush.Inflate"
+        pie.operator("wm.tool_set_by_id", text="Pinch", icon="BRUSH_PINCH").name = "builtin_brush.Pinch"
 
-        
 #        layout.prop(bpy.data.brushes["Smooth"], "strength", text="Smooth Strength")
 
 class OBJECT_MT_Tool_Pie(bpy.types.Menu):
