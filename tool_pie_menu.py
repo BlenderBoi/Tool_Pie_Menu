@@ -65,10 +65,12 @@ class OBJECT_MT_Tool_Pie(bpy.types.Menu):
 
 #        pie.operator("wm.tool_set_by_id", text="Cursor", icon="PIVOT_CURSOR").name = "builtin.cursor"
 
-        pie.operator("wm.tool_set_by_id", text="Select Box", icon="SELECT_SET").name = "builtin.select_box"
+        
 
         pie.operator("wm.tool_set_by_id", text="Move", icon="EMPTY_ARROWS").name = "builtin.move"
         
+	pie.operator("wm.tool_set_by_id", text="Select Box", icon="SELECT_SET").name = "builtin.select_box"
+	
         pie.operator("wm.tool_set_by_id", text="Rotate", icon="ORIENTATION_GIMBAL").name = "builtin.rotate"
         
         pie.operator("wm.tool_set_by_id", text="Scale", icon="CON_SIZELIKE").name = "builtin.scale"
