@@ -59,15 +59,15 @@ class OBJECT_MT_Tool_Pie(bpy.types.Menu):
 
         layout = self.layout
 
-    	pie = layout.menu_pie()
+        pie = layout.menu_pie()
 
-    	pie.operator("wm.tool_set_by_id", text="Move", icon="EMPTY_ARROWS").name = "builtin.move"
+        pie.operator("wm.tool_set_by_id", text="Move", icon="EMPTY_ARROWS").name = "builtin.move"
 
-    	pie.operator("wm.tool_set_by_id", text="Select Box", icon="SELECT_SET").name = "builtin.select_box"
+        pie.operator("wm.tool_set_by_id", text="Select Box", icon="SELECT_SET").name = "builtin.select_box"
 
-    	pie.operator("wm.tool_set_by_id", text="Rotate", icon="ORIENTATION_GIMBAL").name = "builtin.rotate"
+        pie.operator("wm.tool_set_by_id", text="Rotate", icon="ORIENTATION_GIMBAL").name = "builtin.rotate"
 
-    	pie.operator("wm.tool_set_by_id", text="Scale", icon="CON_SIZELIKE").name = "builtin.scale"
+        pie.operator("wm.tool_set_by_id", text="Scale", icon="CON_SIZELIKE").name = "builtin.scale"
 
 
         if context.mode == "EDIT_ARMATURE":
