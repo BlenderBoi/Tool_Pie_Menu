@@ -23,30 +23,28 @@ class SCULPT_MT_Brush_Pie(bpy.types.Menu):
             return True
 
     def draw(self, context):
-        
+
         layout = self.layout
 
         pie = layout.menu_pie()
 
         pie.operator("wm.tool_set_by_id", text="Clay Strip", icon="BRUSH_CLAY_STRIPS").name = "builtin_brush.Clay Strips"
-        
+
         pie.operator("wm.tool_set_by_id", text="Crease", icon="BRUSH_CREASE").name = "builtin_brush.Crease"
-        
-#        pie.operator("wm.tool_set_by_id", text="Mask", icon="MOD_MASK").name = "builtin_brush.Mask"
+
 
         pie.operator("wm.tool_set_by_id", text="Scrape", icon="BRUSH_SCRAPE").name = "builtin_brush.Scrape"
-        
+
         pie.operator("wm.tool_set_by_id", text="Grab", icon="BRUSH_GRAB").name = "builtin_brush.Grab"
-     
+
         pie.operator("wm.tool_set_by_id", text="Inflate", icon="BRUSH_INFLATE").name = "builtin_brush.Inflate"
-        
+
         pie.operator("wm.tool_set_by_id", text="Draw Sharp", icon="BRUSH_SCULPT_DRAW").name = "builtin_brush.Draw Sharp"
-        
+
         pie.operator("wm.tool_set_by_id", text="Blob", icon="BRUSH_BLOB").name = "builtin_brush.Blob"
-        
+
         pie.operator("wm.tool_set_by_id", text="Pinch", icon="BRUSH_PINCH").name = "builtin_brush.Pinch"
 
-#        layout.prop(bpy.data.brushes["Smooth"], "strength", text="Smooth Strength")
 
 class OBJECT_MT_Tool_Pie(bpy.types.Menu):
 
@@ -58,34 +56,30 @@ class OBJECT_MT_Tool_Pie(bpy.types.Menu):
             return True
 
     def draw(self, context):
-        
+
         layout = self.layout
 
-        pie = layout.menu_pie()
+    	pie = layout.menu_pie()
 
-#        pie.operator("wm.tool_set_by_id", text="Cursor", icon="PIVOT_CURSOR").name = "builtin.cursor"
+    	pie.operator("wm.tool_set_by_id", text="Move", icon="EMPTY_ARROWS").name = "builtin.move"
 
-        
+    	pie.operator("wm.tool_set_by_id", text="Select Box", icon="SELECT_SET").name = "builtin.select_box"
 
-        pie.operator("wm.tool_set_by_id", text="Move", icon="EMPTY_ARROWS").name = "builtin.move"
-        
-	pie.operator("wm.tool_set_by_id", text="Select Box", icon="SELECT_SET").name = "builtin.select_box"
-	
-        pie.operator("wm.tool_set_by_id", text="Rotate", icon="ORIENTATION_GIMBAL").name = "builtin.rotate"
-        
-        pie.operator("wm.tool_set_by_id", text="Scale", icon="CON_SIZELIKE").name = "builtin.scale"
-        
+    	pie.operator("wm.tool_set_by_id", text="Rotate", icon="ORIENTATION_GIMBAL").name = "builtin.rotate"
+
+    	pie.operator("wm.tool_set_by_id", text="Scale", icon="CON_SIZELIKE").name = "builtin.scale"
+
 
         if context.mode == "EDIT_ARMATURE":
             pie.operator("wm.tool_set_by_id", text="Bone Size", icon="BONE_DATA").name = "builtin.bone_size"
-        
+
 
 classes = [SCULPT_MT_Brush_Pie, OBJECT_MT_Tool_Pie]
 
 addon_keymaps = []
 
 def register():
-    
+
     for cls in classes:
         bpy.utils.register_class(cls)
 
@@ -109,14 +103,13 @@ def register():
 
 
 def unregister():
-    
+
 
     for cls in classes:
         bpy.utils.unregister_class(cls)
 
 
     addon_keymaps.clear()
-    
+
 if __name__ == "__main__":
     register()
-
