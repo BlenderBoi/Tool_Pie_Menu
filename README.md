@@ -1,6 +1,6 @@
 # Tool_Pie_Menu
 
-Add A Pie Menu when You Press Space bar for you to Switch the Tools Easily
+Add A Pie Menu that overwrites your Space bar with tool pie to help switching tools easily
 
 This addon is made based on BlenderBoi's Preferences
 
