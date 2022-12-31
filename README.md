@@ -1,4 +1,4 @@
-# Tool_Pie_Menu
+# Tool Pie Menu
 
 Add A Pie Menu that overwrites your Space bar with tool pie to help switching tools easily
 
@@ -14,7 +14,7 @@ The Pie will change based on what Mode You Are in
 
 ### Sculpt Mode
 
-![Sculpt](https://blenderboi.com/gallery/ToolPieMenu/Seuclpting.png)
+![Sculpt](https://blenderboi.com/gallery/ToolPieMenu/Sculpting.png)
 
 ### Texture Paint Mode
 
