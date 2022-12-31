@@ -1,5 +1,7 @@
 # Tool Pie Menu
 
+![Banner](https://blenderboi.com/gallery/ToolPieMenu/Banner.png)
+
 Add A Pie Menu that overwrites your Space bar with tool pie to help switching tools easily
 
 This addon is made based on BlenderBoi's Preferences
